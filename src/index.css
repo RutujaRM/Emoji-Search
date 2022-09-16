@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+:root {
+ 
+  --white: #FFFF;
+  --blue: #43978D;
+  --green-blue: #20484a;
+  --grey: #353535;
+  --nav:#1488cc,#454bc0;
+  --body:#ba68c8;
+  --inputborder:#FFFF;
+  --inputbag:#76ff03;
+}
+
+
+
+
+
+body {
+  
+  
+  background-color: var(--body);
+
+}
+
+
+/* Navigation Bar CSS */
+
+
+.nav {
+  background: linear-gradient(var(--nav));
+  height: 4rem;
+  padding: 0.1rem 0.75rem;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+.nav > h1{
+  display: inline;
+  text-align: center;
+  color: white;
+  padding: 0rem 0rem 0rem 3rem;
+}
+  
+.nav > a {
+  padding:0.5rem 2rem 0rem 0rem;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+  color: white;
+}
+
+ul{
+  position:absolute;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  display:flex;
+  
+}
+ul li{
+  list-style:none;
+  width:40px;
+  height:40px;
+  background:#fff;
+  border-radius:50%;
+  animation:grow 1.6s ease-in-out infinite;
+}
+  @keyframes grow
+  {
+    0% , 40% , 100%
+    {
+      transform:scale(0.2);
+    }
+    20%{
+       transform:scale(1);
+
+    }
+  }
+
+ul li:nth-child(1){
+  animation-delay:-1.4s;
+  background:#ffff00;
+  box-shadow:0 0 50px #ffff00;
+  
+}
+ul li:nth-child(2){
+  animation-delay:-1.2s;
+  background:#76ff03;
+  box-shadow:0 0 50px #76ff03;
+  
+}
+ul li:nth-child(3){
+  animation-delay:-1s;
+  background:#f06292;
+  box-shadow:0 0 50px #f06292;
+  
+}
+ul li:nth-child(4){
+  animation-delay:-0.8s;
+  background:#4fc3f7;
+  box-shadow:0 0 50px #4fc3f7;
+  
+}
+ul li:nth-child(5){
+  animation-delay:-0.6s;
+  background:#ba68c8;
+  box-shadow:0 0 50px #ba68c8;
+  
+}
+ul li:nth-child(6){
+  animation-delay:-0.4s;
+  background:#f57c00;
+  box-shadow:0 0 50px #f57c00;
+  
+}
+ul li:nth-child(7){
+  animation-delay:-0.2s;
+  background:#673ab7;
+  box-shadow:0 0 50px #673ab7;
+  
+}
+/* Search Bar CSS */
+
+.search {
+  text-align: center;
+  margin: 1rem;
+ 
+  
+}
+ 
+
+.search > input {
+  border-radius: 10px;
+  border: 2px solid wheat;
+  font-size: 110%;
+  margin-bottom: 0.5rem;
+  height: 3rem;
+  width: 30rem;
+  text-align: center;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+  border:none;
+
+}
+
+
+
+.search > input:hover{
+  color: white;
+  border: 1px solid var(--inputborder);
+  background-color: var(--inputbag);
+  border:2px solid #f57c00;
+  cursor: pointer;
+}
+
+.search >h3{
+  color: white;
+  font-style: italic;
+  font-weight: 900;
+ font-size: x-large;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+
+/* Emoji Card Div's */
+
+.emoji_cards {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Emoji Cards Data */
+.item {
+  background-color: var(--white);
+  border-radius: 5px;
+  display: inline-block; 
+  padding: 0px 0.5rem;
+  transition: all 0.2s linear;
+  text-align: center;
+  margin: 2rem 0rem 0rem 2rem;
+  height: 10rem;
+  width: 15rem;
+  box-shadow: 0.5rem 0.5rem 2px 5px #4fc3f7; 
+  cursor: pointer;
+ 
+}
+
+.item:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 5px 5px 10px var(--green-blue);
+  transform: scale(1.1);
+  -webkit-box-shadow:0px 0px 23px 11px rgba(13,143,104,0.58);
+-moz-box-shadow: 0px 0px 23px 11px rgba(13,143,104,0.58);
+box-shadow: 0px 0px 23px 11px rgba(13,143,104,0.58);
+}
+
+.emoji {
+  font-size: 250%;
+}
+
+
+.emoji:hover {
+  font-size: 350%;
+}
+
+/* Data not found Result */
+
+.no-result {
+  text-align: center;
+  font-size: xx-large;
+  text-align: center;
+  color: #ffff00;
+ margin-top: 10rem;
+}
+
+.copied, .copied:hover {
+  background-color: var(--green-blue);
+}
