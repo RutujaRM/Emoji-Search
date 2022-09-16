@@ -37,10 +37,22 @@ The React useState Hook allows us to track state in a function component (Variab
 
 State generally refers to data or properties that need to be tracking in an application.
 
-## hosted link :-
-                  https://emojis-search-react.netlify.app/
 
 ## Implementations 
 Implemented the CSS
 Implemented the filter logic, using useEffect.
 Implemented code organization by separating various components.
+
+## Emojee Search Application - Contd.
+
+Implement Copy functionality :- For To copy Emoji's 
+
+Copy package that we used: https://www.npmjs.com/package/react-copy-to-clipboard https://github.com/nkbt/react-copy-to-clipboard 
+                           npm install --save react-copy-to-clipboard
+
+## Our deployments:
+
+Github - https://github.com/RutujaRM/Emoji-Search
+
+
+Deploy on Netlify Hosted URL - https://emojis-search-react.netlify.app/
