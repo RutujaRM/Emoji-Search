@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className="nav" >     
              <h1>Emoji's💝💝 </h1>
-            <a href="/" target="_blank" >Github Link 😀</a>
+            <a href="/" target="_blank" rel="noopener noreferrer">Github Link 😀</a>
             <div>
                 <ul>
                     <li></li>
