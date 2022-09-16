@@ -39,3 +39,8 @@ State generally refers to data or properties that need to be tracking in an appl
 
 ## hosted link :-
                   https://emojis-search-react.netlify.app/
+
+## Implementations 
+Implemented the CSS
+Implemented the filter logic, using useEffect.
+Implemented code organization by separating various components.
